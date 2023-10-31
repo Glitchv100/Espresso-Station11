@@ -12,6 +12,20 @@
   gap: 2rem;
 }
 
+.carousel-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.carousel-flex img {
+  width: 8%;
+  min-width: 6rem;
+  object-fit: contain;
+  overflow-x: hidden;
+}
+
 .section-header-wrapper {
   display: flex;
   justify-content: center;
