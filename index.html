@@ -101,8 +101,10 @@
     >
       <video
         src="./assets/videos/1.mp4"
+        id="myVideo"
         muted
         autoplay
+        playsinline
         width="100%"
         style="object-fit: cover"
       ></video>
@@ -183,34 +185,50 @@
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="2000">
             <div class="carousel-flex">
-              <img src="./assets/images/brands/f890d9f44624d1.png" alt="..." />
-              <img
-                src="./assets/images/brands/acaia-logo_281x1.png"
-                alt="..."
-              />
-              <img src="./assets/images/brands/brand1.png" alt="..." />
-              <img src="./assets/images/customers/0.png" alt="..." />
-              <img src="./assets/images/customers/1.png" alt="..." />
-              <img src="./assets/images/customers/2.png" alt="..." />
-              <img src="./assets/images/customers/3.png" alt="..." />
-              <img src="./assets/images/customers/4.png" alt="..." />
-              <img src="./assets/images/customers/5.png" alt="..." />
-              <img src="./assets/images/customers/6.png" alt="..." />
+              <div class="carousel-flex-row">
+                <img src="./assets/images/brands/0.png" alt="..." />
+                <img src="./assets/images/brands/1.png" alt="..." />
+                <img src="./assets/images/brands/3.png" alt="..." />
+                <img src="./assets/images/brands/4.png" alt="..." />
+              </div>
+              <div class="carousel-flex-row">
+                <img src="./assets/images/brands/5.png" alt="..." />
+                <img src="./assets/images/brands/6.png" alt="..." />
+                <img src="./assets/images/brands/7.png" alt="..." />
+                <img src="./assets/images/brands/8.png" alt="..." />
+              </div>
+              <div class="carousel-flex-row">
+                <img src="./assets/images/brands/9.png" alt="..." />
+                <img src="./assets/images/brands/10.png" alt="..." />
+                <img src="./assets/images/brands/11.png" alt="..." />
+                <img src="./assets/images/brands/12.png" alt="..." />
+              </div>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
+          <div class="carousel-item carousel-height" data-bs-interval="2000">
             <div class="carousel-flex">
-              <img src="./assets/images/customers/7.png" alt="..." />
-              <img src="./assets/images/customers/8.png" alt="..." />
-              <img src="./assets/images/customers/9.png" alt="..." />
-              <img src="./assets/images/customers/10.png" alt="..." />
-              <img src="./assets/images/customers/11.png" alt="..." />
-              <img src="./assets/images/customers/12.png" alt="..." />
-              <img src="./assets/images/customers/13.png" alt="..." />
-              <img src="./assets/images/customers/14.png" alt="..." />
-              <img src="./assets/images/customers/15.png" alt="..." />
-              <img src="./assets/images/customers/16.png" alt="..." />
-              <img src="./assets/images/customers/17.png" alt="..." />
+              <div class="carousel-flex-row">
+                <img src="./assets/images/brands/13.png" alt="..." />
+                <img src="./assets/images/brands/14.png" alt="..." />
+                <img src="./assets/images/brands/15.png" alt="..." />
+                <img src="./assets/images/brands/16.png" alt="..." />
+              </div>
+              <div class="carousel-flex-row">
+                <img src="./assets/images/brands/17.png" alt="..." />
+                <img src="./assets/images/brands/18.png" alt="..." />
+                <img src="./assets/images/brands/19.png" alt="..." />
+                <img src="./assets/images/brands/20.png" alt="..." />
+              </div>
+              <div class="carousel-flex-row">
+                <img src="./assets/images/brands/21.png" alt="..." />
+                <img src="./assets/images/brands/22.png" alt="..." />
+                <img src="./assets/images/brands/23.png" alt="..." />
+                <img src="./assets/images/brands/24.png" alt="..." />
+              </div>
+              <div class="carousel-flex-row">
+                <img src="./assets/images/brands/25.png" alt="..." />
+                <img src="./assets/images/brands/26.png" alt="..." />
+              </div>
             </div>
           </div>
         </div>
@@ -426,6 +444,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/customers.js"></script>
+    <script>
+      const video = document.getElementById("myVideo");
+      video.muted = true; // Mute the video
+      video.play(); // Play the video
+    </script>
     <script src="./assets/js/equipments-bundled.js"></script>
   </body>
 </html>
