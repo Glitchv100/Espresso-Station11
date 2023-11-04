@@ -29,7 +29,19 @@ const equipmentSectionHeight = () => {
 };
 equipmentSectionHeight();
 
-window.onresize = () => equipmentSectionHeight();
+const brandsSectionHeight = () => {
+  const screenWidth = window.innerWidth;
+  const brandsSection = document.querySelector(".brands-section");
+  if (screenWidth > 1024) brandsSection.style.height = `620px`;
+  else if (screenWidth > 768) brandsSection.style.height = `580px`;
+  else brandsSection.style.height = `480px`;
+};
+brandsSectionHeight();
+
+window.onresize = () => {
+  equipmentSectionHeight();
+  brandsSectionHeight();
+};
 
 const createList = (list) => {
   const ul = document.createElement("ul");
