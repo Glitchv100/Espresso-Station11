@@ -139,6 +139,24 @@
   }
 }
 
+@media (min-width: 0px) and (max-width: 500px) {
+  #about-us {
+    padding-bottom: 0rem !important;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+  #about-us {
+    padding-bottom: 1rem !important;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  #about-us {
+    padding-bottom: 1.6rem !important;
+  }
+}
+
 @media (min-width: 770px) {
   .about-section__header {
     justify-content: start;
@@ -159,6 +177,8 @@
 /* equipment section */
 .equipment-section {
   min-height: fit-content !important;
+  padding-top: 1.6rem !important;
+  padding-inline: 1.2rem !important;
 }
 .products-header {
   padding: 1rem 0;
@@ -325,7 +345,7 @@
   padding: 0;
   margin: 0;
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .footer-list li {
@@ -350,6 +370,10 @@
     flex-direction: row;
     justify-content: space-evenly;
     gap: 2rem;
+  }
+
+  .footer-list {
+    font-size: 1.4rem;
   }
 
   .footer-list li {

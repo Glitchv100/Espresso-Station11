@@ -27,7 +27,6 @@ const equipmentSectionHeight = () => {
     productViewHeight + productView.length * 32
   }px`;
 };
-equipmentSectionHeight();
 
 const brandsSectionHeight = () => {
   const screenWidth = window.innerWidth;
@@ -109,6 +108,11 @@ window.onload = () => {
     dom.container.appendChild(createProductView(product));
   });
   equipmentSectionHeight();
+
+  const timer = setTimeout(() => {
+    equipmentSectionHeight();
+    clearTimeout(timer);
+  }, 100);
 };
 
 dom.homeEquipment.onclick = () => {
